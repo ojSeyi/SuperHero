@@ -23,12 +23,12 @@
     include("db_connection1.php");
         $getAllHeroes = "SELECT * FROM superheroes";
 
-        $heroListResult = $db -> query($getAllHeroes);
-        while($row = $heroListResult->fetch_array()){
+        $heroListResult = mysqli_query($db, $getAllHeroes);
+        while($row = mysqli_fetch_array($heroListResult)){
             echo "<li>" .$row. "</li>";
         }
-        $heroListResult->close();
-        $db->close();
+
+        
     ?>
     </ul>
 </main>
