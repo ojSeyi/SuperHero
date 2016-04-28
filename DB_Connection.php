@@ -6,6 +6,5 @@
 
     $db = new mysqli("DB_server", "DB_username", "DB_password", "DB_name");
 
-
 ?>
 
