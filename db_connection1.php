@@ -1,7 +1,7 @@
 <?php
     define('host', 'us-cdbr-azure-southcentral-e.cloudapp.net")');
-    define('username', 'bbf3c48901b85f');
-    define('password', '8038ddc6');
+    define('username', 'be3149d439cf7b');
+    define('password', '7fe76a1d');
     define('database', 'marvelheroes');
 
 $db = mysqli_connect("host", "username", "password", "database");
