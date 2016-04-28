@@ -6,8 +6,6 @@
 
     $db = new mysqli("DB_server", "DB_username", "DB_password", "DB_name");
 
-    if($db->connect_errno){
-        die('Connectfailed['.$db->connect_error.']');
-    }
+    
 ?>
 
