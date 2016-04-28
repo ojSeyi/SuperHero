@@ -25,7 +25,7 @@
 
         $heroListResult = $db -> query($getAllHeroes);
         while($row = $heroListResult->fetch_array()){
-            echo "<li>" .$row['firstname']. "</li>";
+            echo "<li>" .$row. "</li>";
         }
         $heroListResult->close();
         $db->close();
