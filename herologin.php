@@ -6,7 +6,7 @@ if(empty($_POST["heroID"])){
 else{
     $username=$_POST["heroID"];
 
-    $sql="SELECT firstname FROM heroes WHERE heroID='$username'";
+    $sql="SELECT firstname FROM heroes WHERE lastName='$username'";
     $result = mysqli_query($db,$sql);
 
     if(mysqli_num_rows($result) == 1){
