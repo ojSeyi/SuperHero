@@ -1,5 +1,5 @@
 <?php
-include ("DB_Connection.php");
+include("db_connection1.php");
 if(empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['gender']) || empty($_POST['power'])){
     echo "Please enter all details of Super Hero";
 }

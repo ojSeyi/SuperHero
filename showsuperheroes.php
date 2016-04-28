@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<?php     include ("DB_Connection.php");?>
+<?php     ;?>
 <header>
     <img src="assets/images/logo.png" alt="logo"/>
     <nav>
@@ -20,7 +20,7 @@
 <main>
     <ul>
     <?php
-
+    include("db_connection1.php");
         $getAllHeroes = "SELECT * FROM superheroes";
 
         $heroListResult = $db -> query($getAllHeroes);
