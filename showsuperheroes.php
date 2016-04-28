@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<?php     include ("DB_Connection.php");?>
 <header>
     <img src="assets/images/logo.png" alt="logo"/>
     <nav>
         <ul>
-            <li><a href=#>Home</a></li>
-            <li><a href="showsuperheroes.php">Heroes</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href=#>Heroes</a></li>
             <li><a href="superheroform.html">Hero Registration</a></li>
         </ul>
     </nav>
@@ -19,7 +20,6 @@
 <main>
     <ul>
     <?php
-    include ("DB_Connection.php");
 
         $getAllHeroes = "SELECT * FROM superheroes";
 
