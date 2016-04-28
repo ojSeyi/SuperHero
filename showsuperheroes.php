@@ -28,9 +28,17 @@
             echo "<li>" .$row. "</li>";
         }
 
-
     ?>
     </ul>
+    <br>
+    <br>
+    <br><br>
+    <h1>
+        <?php
+            $username = $_GET['username'];
+            echo $username;
+        ?>
+    </h1>
 </main>
 <footer>(c) Seyi Marvel Parody 2016</footer>
 </body>

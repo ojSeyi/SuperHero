@@ -19,7 +19,7 @@
 <main>
     <h1>Super Hero Registration</h1>
     <div class="heroreg">
-        <form action="showsuperheroes.php" method="post">
+        <form action="insertsuperhero.php" method="post">
             <label>First Name </label>
             <input type="text" placeholder="First Name" name="firstname"><br><br>
             <label>Last Name </label>
@@ -30,6 +30,14 @@
             <input type="radio" value="female" name="gender"><br><br>
             <label>Power </label>
             <input type="text" placeholder="Main Superhero Power" name="power"><br><br>
+            <input type="submit" value="Go"><br>
+        </form>
+    </div>
+
+    <div class="herolog">
+        <form action="herologin.php" method="post">
+            <label>Hero ID </label>
+            <input type="text" placeholder="Hero ID" name="heroID"><br><br>
             <input type="submit" value="Go"><br>
         </form>
     </div>
