@@ -28,7 +28,7 @@
             echo "<li>" .$row. "</li>";
         }
 
-        
+
     ?>
     </ul>
 </main>
