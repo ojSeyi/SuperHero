@@ -4,7 +4,7 @@
     define('password', '8038ddc6');
     define('database', 'marvelheroes');
 
-$db = mysqli_connect(hostname, username, password, database);
+$db = mysqli_connect('us-cdbr-azure-southcentral-e.cloudapp.net', username, password, database);
 
 if(mysqli_connect_errno($db)){
     echo "Failed to connect: " . mysqli_error();
