@@ -9,13 +9,13 @@ else{
     $gender = $_POST['gender'];
     $power = $_POST['power'];
 
-    $addHero = "Insert into superheroes(firstName, lastName, gender, power) VALUES ('$firstname', '$lastname', '$gender', '$power')";
+    $addHero = "Insert into superheroes(firstName, lastName, gender, power) VALUES ($firstname, $lastname, $gender, $power)";
 
     $result = mysqli_query($db, $addHero);
-    if(mysqli_query($db, $addHero)){
-
+    if(!$result){
+        die("Could not enter data: " . mysqli_error());
     }else{
-        echo "Error" . $addHero . "<br>" . mysqli_error($db);
+        echo "Entered successfully";
     }
 
     header("showsuperheroes.php"); //redirect to show heroes page
